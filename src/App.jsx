@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ColorfulMessage from "./components/ColorfulMessage";
+import { ColorfulMessage } from "./components/ColorfulMessage";
 
 const App = () => {
   console.log("さいしょ");
@@ -24,13 +24,6 @@ const App = () => {
   useEffect(() => {
     console.log("useEffect!");
   }, [num]);
-
-  // スタイル定義
-  // cssでは"font-size"だが、reactではキャメルケース記法なので、fontSizeにする。
-  // const contentStyle = {
-  //   color: "blue",
-  //   fontSize: "18px"
-  // };
 
   return (
     <>
